@@ -1,5 +1,5 @@
 #include <stdio.h>
-/**
+/* *
  * * main - main block
  * * description - the starting point of the program
  * * Return: 0
