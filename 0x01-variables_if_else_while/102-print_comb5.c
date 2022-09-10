@@ -6,19 +6,19 @@
 */
 int main(void)
 {
-int i, j;
-for (i = 0; i < 100; i++)
+int c, d;
+for (c = 0; c < 100; c++)
 {
-for (j = 0; j < 100; j++)
+for (d = 0; d < 100; d++)
 {
-if (i < j)
+if (c < d)
 {
-putchar((i / 10) + 48);
-putchar((i % 10) + 48);
+putchar((c / 10) + 48);
+putchar((c % 10) + 48);
 putchar(' ');
-putchar((j / 10) + 48);
-putchar((j % 10) + 48);
-if (i != 98 || j != 99)
+putchar((d / 10) + 48);
+putchar((d % 10) + 48);
+if (c != 98 || d != 99)
 {
 putchar(',');
 putchar(' ');
