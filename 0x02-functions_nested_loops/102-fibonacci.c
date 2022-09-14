@@ -1,9 +1,9 @@
 #include <stdio.h>
-
 /**
 * main - main function
 * Return: nothing
 */
+
 int main(void)
 {
 int counter = 0;
@@ -21,5 +21,6 @@ long int c = a + b;
 	c = a + b;
 }
 	printf("%d\n", counter);
+	
 	return (0);
 }
