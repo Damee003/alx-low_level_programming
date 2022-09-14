@@ -1,10 +1,12 @@
 #include <stdio.h>
+
 /**
 * main - main function
 *
 * Return: nothing
 */
-int main(void)
+
+	int main(void)
 {
 	int counter = 0;
 	long int a = 1;
@@ -21,5 +23,6 @@ int main(void)
 	c = a + b;
 }
 	printf("%d\n", counter);
+
 	return (0);
 }
