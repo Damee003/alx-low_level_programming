@@ -5,7 +5,7 @@
 * @n: number of bytes to be used
 * @b: char to be used
 * @s: address to the memory area
-* Return: return pointer to the memory area
+* Return: pointer to the memory area
 */
 char *_memset(char *s, char b, unsigned int n);
 {
