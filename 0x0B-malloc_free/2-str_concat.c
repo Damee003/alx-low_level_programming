@@ -15,6 +15,7 @@ i++;
 }
 return (i);
 }
+
 /**
 *str_concat - back a pointer to array
 *@s1: Array one
