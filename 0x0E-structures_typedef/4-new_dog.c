@@ -16,7 +16,6 @@ while (*str++)
 len++;
 return (len);
 }
-
 /**
 * _strcopy - Copies a string pointed to by src
 * @dest:the buffer storing the string copy
@@ -31,7 +30,6 @@ dest[index] = src[index];
 dest[index] = '\0';
 return (dest);
 }
-
 /**
 * new_dog - Creates a new dog.
 * @name:the name of the dog
