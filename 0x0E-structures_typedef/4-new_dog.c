@@ -9,7 +9,6 @@
 * @owner: owner's dog
 * Return: new dog
 */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 int i = 0, j = 0, k;
@@ -24,6 +23,14 @@ if (dog == NULL)
 free(dog);
 return (NULL);
 }
+
+/*
+* new_dog - new dog
+* @name: name's dog
+* @age: age's dog
+* @owner: owner's dog
+* Return; new dog
+*/
 dog->name = malloc(i * sizeof(dog->name));
 if (dog->name == NULL)
 {
