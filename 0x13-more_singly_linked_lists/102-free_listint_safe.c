@@ -20,7 +20,6 @@ free(temp);
 *head = NULL;
 }
 }
-
 /**
 * free_listint_safe - frees a linked list.
 * @h: head of a list.
