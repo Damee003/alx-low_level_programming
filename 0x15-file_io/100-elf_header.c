@@ -3,7 +3,6 @@
 /*
 * File: 100-elf_header.c
 */
-
 /**
 * check_elf - Checks if a file is an ELF file.
 * @e_ident: A pointer to an array containing the ELF magic numbers.
@@ -43,7 +42,6 @@ else
 printf(" ");
 }
 }
-
 /**
 * print_class - Prints the class of an ELF header.
 * @e_ident: A pointer to an array containing the ELF class.
@@ -62,11 +60,10 @@ break;
 case ELFCLASS64:
 printf("ELF64\n");
 break;
-dfault:
+default:
 printf("<unknown: %x>\n", e_ident[EI_CLASS]);
 }
 }
-
 /**
 * print_data - Prints the data of an ELF header.
 * @e_ident: A pointer to an array containing the ELF class.
@@ -89,7 +86,6 @@ default:
 printf("<unknown: %x>\n", e_ident[EI_CLASS]);
 }
 }
-
 /**
 * print_version - Prints the version of an ELF header.
 * @e_ident: A pointer to an array containing the ELF version.
@@ -108,7 +104,6 @@ printf("\n");
 break;
 }
 }
-
 /**
 * print_osabi - Prints the OS/ABI of an ELF header.
 * @e_ident: A pointer to an array containing the ELF version.
@@ -152,7 +147,6 @@ default:
 printf("<unknown: %x>\n", e_ident[EI_OSABI]);
 }
 }
-
 /**
 * print_abi - Prints the ABI version of an ELF header.
 * @e_ident: A pointer to an array containing the ELF ABI version.
@@ -162,7 +156,6 @@ void print_abi(unsigned char *e_ident)
 printf("  ABI Version:                       %d\n",
 e_ident[EI_ABIVERSION]);
 }
-
 /**
 * print_type - Prints the type of an ELF header.
 * @e_type: The ELF type.
@@ -194,7 +187,6 @@ default:
 printf("<unknown: %x>\n", e_type);
 }
 }
-
 /**
 * print_entry - Prints the entry point of an ELF header.
 * @e_entry: The address of the ELF entry point.
@@ -214,7 +206,6 @@ printf("%#x\n", (unsigned int)e_entry);
 else
 printf("%#lx\n", e_entry);
 }
-
 /**
 * close_elf - Closes an ELF file.
 * @elf: The file descriptor of the ELF file.
@@ -229,7 +220,6 @@ dprintf(STDERR_FILENO,
 exit(98);
 }
 }
-
 /**
 * main - Displays the information contained in the
 * ELF header at the start of an ELF file.
